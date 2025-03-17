@@ -11,9 +11,13 @@ const gameboard = (function()
     return {getBoard, updateBoard, resetBoard};
 })();
 
-const player = function()
+const player = function(character)
 {
-    return {};
+    const playerCharacter = character;
+
+    const getPlayerCharacter = () => playerCharacter;
+
+    return {getPlayerCharacter};
 };
 
 const displayController = (function()
